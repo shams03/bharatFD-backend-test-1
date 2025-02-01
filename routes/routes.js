@@ -5,9 +5,11 @@ import {
   getById,
   deleteFAQ,
   updateFAQ,
+  getAllFAQ,
 } from "../controller/faqController.js";
 
 export const router = Router();
+
 
 router.get("/api/faqs/", getFAQ);
 router.post("/api/faqs/", createFAQ);

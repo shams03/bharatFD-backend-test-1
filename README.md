@@ -1,4 +1,6 @@
 
+
+
 # Multilingual FAQ Management System
 
 A dynamic FAQ management solution designed with scalability and user experience in mind. It comes equipped with:
@@ -30,18 +32,18 @@ A dynamic FAQ management solution designed with scalability and user experience 
 Create a `.env` file in the root directory:
 
 ### Server Configuration
-
+```bash
 PORT=3000
 NODE_ENV=development
 ```
 
 ### MongoDB Configuration
-
+```bash
 MONGO_URI=mongodb://localhost:27017/faq_system
 ```
 
 ### Redis Configuration
-
+```bash
 REDIS_HOST=localhost
 REDIS_PORT=6379
 REDIS_URL=redis://localhost:6379
@@ -50,36 +52,37 @@ REDIS_URL=redis://localhost:6379
 ## 🔧 Installation
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/HIMANSHU00KUMAR/Multilang_FAQ_system.git
    cd Multilang_FAQ_system
    ```
 
 2. Install dependencies:
-  
+   ```bash
    npm install
    ```
 
 3. Start Redis server:
-  
+   ```bash
    redis-server
    ```
 
 4. Run the application:
 
    ### Production
-   
+   ```bash
    npm start
-  
+   ```
 
 ## 🐳 Docker Setup:
 
 1. Build the Docker image:
-   
+   ```bash
    docker-compose build
    ```
 
 2. Run the containers:
-   
+   ```bash
    docker-compose up
    ```
 
@@ -93,11 +96,11 @@ http://localhost:3000/api/faqs
 ### Endpoints:
 
 #### FAQ Management:
-- GET    `http://localhost:3000/api/faqs/`              - List all FAQs
-- GET    `http://localhost:3000/api/faqs?lang=hi`       - Get FAQ in a particular language
-- POST   `http://localhost:3000/api/faqs/`              - Create new FAQ
-- DELETE `http://localhost:3000/api/faqs/:id`           - Delete FAQ
-- PUT    `http://localhost:3000/api/faqs/:id`           - Update FAQ
+- **GET**    `http://localhost:3000/api/faqs/`              - List all FAQs
+- **GET**    `http://localhost:3000/api/faqs?lang=hi`       - Get FAQ in a particular language
+- **POST**   `http://localhost:3000/api/faqs/`              - Create new FAQ
+- **DELETE** `http://localhost:3000/api/faqs/:id`           - Delete FAQ
+- **PUT**    `http://localhost:3000/api/faqs/:id`           - Update FAQ
 
 #### Language Support:
 - Add `?lang=` query parameter to specify the response language
@@ -107,41 +110,43 @@ http://localhost:3000/api/faqs
 ### Request Examples:
 
 #### Create FAQ:
-- POST /api/faqs/
-  - Content-Type* application/json
+- **POST /api/faqs/**
+  - **Content-Type**: application/json
 
+```json
 {
   "question": "How do I reset my password?",
   "answer": "Follow the instructions sent to your email."
 }
-
+```
 
 ## 🧪 Testing:
 - Run the test suite:
   - **Run all tests**:
-    
+    ```bash
     npm test
     ```
   - **Run with coverage**:
-    
+    ```bash
     npm run test:coverage
     ```
 
 ## 🤝 Contributing:
 1. Fork the repository.
 2. Create a feature branch:
-   
+   ```bash
    git checkout -b feature/your-feature
    ```
 3. Commit your changes:
-   
+   ```bash
    git commit -am 'feat: Add new feature'
    ```
 4. Push to the branch:
-   
+   ```bash
    git push origin feature/your-feature
    ```
 5. Submit a Pull Request.
 
 ## 🆘 Support:
 For support, email [shams03.work@gmail.com](mailto:shams03.work@gmail.com) or open an issue in the repository.
+```

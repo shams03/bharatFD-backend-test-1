@@ -30,18 +30,18 @@ A dynamic FAQ management solution designed with scalability and user experience 
 Create a `.env` file in the root directory:
 
 ### Server Configuration
-```bash
+
 PORT=3000
 NODE_ENV=development
 ```
 
 ### MongoDB Configuration
-```bash
+
 MONGO_URI=mongodb://localhost:27017/faq_system
 ```
 
 ### Redis Configuration
-```bash
+
 REDIS_HOST=localhost
 REDIS_PORT=6379
 REDIS_URL=redis://localhost:6379

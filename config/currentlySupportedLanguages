@@ -1,0 +1,2 @@
+export const currentlySupportedLanguages = ["en", "hi", "bn", "fr"];
+export const defaultLang = "en"

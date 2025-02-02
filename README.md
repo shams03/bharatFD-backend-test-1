@@ -53,8 +53,7 @@ REDIS_URL=redis://localhost:6379
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/HIMANSHU00KUMAR/Multilang_FAQ_system.git
-   cd Multilang_FAQ_system
+  https://github.com/shams03/bharatFD-backend-test-1.git
    ```
 
 2. Install dependencies:
@@ -115,8 +114,8 @@ http://localhost:3000/api/faqs
 
 ```json
 {
-  "question": "How do I reset my password?",
-  "answer": "Follow the instructions sent to your email."
+  "question": "How do I read FAQ?",
+  "answer": "Follow the instructions sent to your mobile number."
 }
 ```
 

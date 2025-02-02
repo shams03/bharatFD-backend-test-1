@@ -53,7 +53,7 @@ REDIS_URL=redis://localhost:6379
 
 1. Clone the repository:
    ```bash
-  https://github.com/shams03/bharatFD-backend-test-1.git
+   https://github.com/shams03/bharatFD-backend-test-1.git
    ```
 
 2. Install dependencies:
